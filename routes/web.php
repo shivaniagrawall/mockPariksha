@@ -11,10 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', '\App\Modules\General\Controllers\GeneralController@index');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
